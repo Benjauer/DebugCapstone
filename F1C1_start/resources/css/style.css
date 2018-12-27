@@ -233,11 +233,14 @@ header .mobile {
   margin: 0 auto;
 }
 
+
+
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin-top: 30px;
 }
 
 .feature h3 {
@@ -252,23 +255,32 @@ header .mobile {
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
+
   }
 
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
   }
+
+  .center div img {
+    height: 65%;
+    width: 90%;
+    margin: 32px;
+  }
 }
 
 @media only screen and (max-width: 760px) {
   #features-section {
-    flex-flow: column;
+    flex-flow: row;
     padding: 0;
+    height: 635px;
   }
 
   .feature {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
+    text-align: left;
   }
 }
 
@@ -332,53 +344,44 @@ header .mobile {
     display: none;
   }
 
-  #quotes-section div {
-    flex-direction: column;
-  }
-
-  #quotes-section div img {
-    width: 7rem;
-    align-self: center;
-    margin: 15px;
-  }
 }
 
 /* Quotes Section */
 
 #quotes-section {
   background-color: #f3f3f3;
-  padding: 80px 30px;
+
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
-  font-family: "Palatino", serif;
+  font-family: Palatino, serif;
   font-size: 1.875rem;
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
     display: block;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -390,6 +393,15 @@ header .mobile {
   }
 
 }
+
+
+@media only screen and (max-width: 460px) {
+  #quotes-section div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /* Footer */
 
